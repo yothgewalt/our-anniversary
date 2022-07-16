@@ -4,6 +4,7 @@
     import Container from "$libraries/Container.svelte";
     import PartyPopper from "$assets/party_popper.png";
     import Countdown from "$libraries/Countdown.svelte";
+import Image from "$libraries/Image.svelte";
 
     export let actions: AnniversaryType;
 </script>
@@ -11,21 +12,20 @@
 <Container>
     <div class="anniversary_box__anniversary_class">
         <a href={actions.repository}>
-            <img src={PartyPopper} alt="party popper our anniversary" class="party_popper__anniversary_class" />
+            <Image actions={ {src: PartyPopper, alt: "party popper our anniversary", class: "h-20 w-20 will-change-auto hover:drop-shadow-party-popper 280px:h-28 280px:w-28 280px:drop-shadow-party-popper 912px:drop-shadow-none"} } />
         </a>
         <span class="space_void__anniversary_class">
             <h1 class="title__anniversary_class">Our Anniversary</h1>
-            <Countdown actions={ {date: actions.date} }
-            />
+            <Countdown actions={ {date: actions.date} } />
         </span>
         <span class="space_void__anniversary_class">
             <p class="description__anniversary_class">
                 This is my couple's anniversary countdown website, between
-                <a href="/">
+                <a href="https://web.facebook.com/yongyuth.chuankhuntod/">
                     <b class="male_named__anniversary_class default_transition__anniversary_class">{actions.male}</b>
                 </a>
                 and
-                <a href="/">
+                <a href="https://web.facebook.com/profile.php?id=100074083756389">
                     <b class="female_named__anniversary_class default_transition__anniversary_class">{actions.female}</b>
                 </a>
                 .
@@ -42,10 +42,6 @@
 
     .anniversary_box__anniversary_class {
         @apply w-full h-full flex flex-col space-y-12 select-none justify-center items-center 280px:space-y-7;
-    }
-
-    .party_popper__anniversary_class {
-        @apply h-24 w-24 will-change-auto hover:drop-shadow-party-popper 280px:h-20 280px:w-20 280px:drop-shadow-party-popper 912px:drop-shadow-none;
     }
 
     .title__anniversary_class {
