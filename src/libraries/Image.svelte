@@ -30,7 +30,7 @@
 {#if image_loaded}
     <img src={actions.src} alt={actions.alt} class={actions.class} />
 {:else if image_failed}
-    <img src={Heart} alt="" class="h-24 w-24 280px:h-20 280px:w-20" />
+    <img src={Heart} alt="" class="h-20 w-20 280px:h-28 280px:w-28" />
 {:else if image_loading}
-    <img src={Heart} alt="" class="h-24 w-24 280px:h-20 280px:w-20" />
+    <img src={Heart} alt="" class="h-20 w-20 280px:h-28 280px:w-28" />
 {/if}
