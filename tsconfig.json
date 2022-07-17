@@ -36,7 +36,9 @@
         "src/**/*.ts",
         "src/**/*.js",
         "src/**/*.json",
-        "src/**/*.svelte"
+        "src/**/*.svelte",
+        "src/**/*.png",
+        "src/**/*.gif"
     ],
     "exclude": [
         "node_modules",

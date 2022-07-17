@@ -13,6 +13,7 @@
     onMount(() => {
         const imageObject: HTMLImageElement = new Image;
         imageObject.src = actions.src;
+        imageObject.setAttribute("draggable", false)
         image_loading = true;
 
         imageObject.onload = () => {

@@ -2,7 +2,7 @@
     import Layout from "$components/Layout.svelte";
     import Anniversary from "$components/Anniversary.svelte";
 
-    let anniversary_date: number = new Date(2022, 11, 8, 0, 0, 0, 0).getTime();
+    let anniversary_date: number = new Date(2022, 11, 8).getTime();
 </script>
 
 <Layout>

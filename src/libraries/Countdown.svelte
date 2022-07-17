@@ -5,9 +5,9 @@
     import { onMount } from "svelte";
     import { tweened, type Tweened } from "svelte/motion";
 
-    let now_a_day: number = new Date().getTime();
+    let time_at_now: number = new Date().getTime();
 
-    let difference: Tweened<number> = tweened(actions.date - now_a_day, { duration: 300 });
+    let difference: Tweened<number> = tweened(actions.date - time_at_now);
     
     onMount(() => {
         setInterval(() => {
@@ -23,6 +23,4 @@
     $: seconds = Math.floor(($difference % (1000 * 60)) / 1000);
 </script>
 
-<h2 class="mt-1 text-xl 280px:text-[0.97rem] 280px:leading-4 390px:text-lg 768px:text-2xl 820px:text-3xl">
-    {days} Day {hours} Hour {minutes} Minute {seconds} Second
-</h2>
+{days} Day {hours} Hour {minutes} Minute {seconds} Second

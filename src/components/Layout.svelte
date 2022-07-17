@@ -1,5 +1,11 @@
+<script lang="ts">
+    import Container from "$libraries/Container.svelte";
+</script>
+
 <main class="initialize__anniversary_layout">
-    <slot></slot>
+    <Container>
+        <slot></slot>
+    </Container>
 </main>
 
 <style>
