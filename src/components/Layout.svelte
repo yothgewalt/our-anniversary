@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Container from "$libraries/Container.svelte";
+    import Container from "$components/Container.svelte";
 </script>
 
 <main class="initialize__anniversary_layout">
