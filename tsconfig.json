@@ -23,8 +23,11 @@
             "$libraries/*": [
                 "./src/libraries/*"
             ],
-            "$utilities/*": [
-                "./src/utilities/*"
+            "$pages/*": [
+                "./src/pages/*"
+            ],
+            "$stores/*": [
+                "./src/stores/*"
             ]
         },
         "allowJs": true,

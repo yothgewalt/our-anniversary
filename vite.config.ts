@@ -10,7 +10,8 @@ export default defineConfig({
             $assets: resolve("./src/assets"),
             $components: resolve("./src/components"),
             $libraries: resolve("./src/libraries"),
-            $utilities: resolve("./src/utilities")
+            $pages: resolve("./src/pages"),
+            $stores: resolve("./src/stores")
         }
     }
 });
